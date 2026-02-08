@@ -1,0 +1,144 @@
+import { FaTint, FaFire, FaWeightHanging, FaSyringe, FaThumbsUp } from "react-icons/fa";
+
+export default function Quality() {
+  const qualityItems = [
+    {
+      icon: <FaTint />,
+      title: "Colour Fastness",
+      description: "Colors stay vibrant wash after wash",
+    },
+    {
+      icon: <FaFire />,
+      title: "Tear Strength",
+      description: "High resistance to tearing",
+    },
+    {
+      icon: <FaWeightHanging />,
+      title: "Tensile Strength",
+      description: "Strong & durable fabric",
+    },
+    {
+      icon: <FaSyringe />,
+      title: "Anti Pilling",
+      description: "Smooth surface, no fabric balls",
+    },
+    {
+      icon: <FaThumbsUp />,
+      title: "Dye Strength",
+      description: "Long-lasting color retention",
+    },
+  ];
+
+  return (
+    <section className="py-15 bg-gradient-to-br from-green-100 to-blue-100">
+      <div className="container mx-auto px-4 max-w-7xl">
+        
+        {/* Heading */}
+        <div className="text-center mb-8">
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-900">
+            Quality Assurance
+          </h2>
+          <div className="w-16 h-1 bg-gradient-to-r from-green-600 to-blue-600 mx-auto mt-3 mb-4 rounded-full"></div>
+          <p className="text-gray-800 max-w-2xl mx-auto text-sm md:text-base">
+            We follow strict quality checks to ensure our fabrics meet international standards.
+          </p>
+        </div>
+
+        {/* Quality Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-8">
+          {qualityItems.map((item, index) => (
+            <div
+              key={index}
+              className="bg-white/70 backdrop-blur-md border border-white/60 rounded-xl p-4 text-center shadow-sm hover:shadow-md transition"
+            >
+              <div className="flex justify-center mb-2">
+                <div className="text-3xl text-green-700">{item.icon}</div>
+              </div>
+              <h3 className="font-bold text-gray-900 text-sm md:text-base mb-1">
+                {item.title}
+              </h3>
+              <p className="text-gray-700 text-xs md:text-sm">
+                {item.description}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom Info Box */}
+        <div className="bg-white/70 backdrop-blur-md border border-white/60 rounded-2xl p-10 shadow-sm">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start ">
+            
+            {/* Locations */}
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                Stock Locations
+              </h3>
+              <div className="w-16 h-1 bg-gradient-to-r from-green-600 to-blue-600 mx-0 mt-3 mb-4 rounded-full"></div>
+
+
+              <ul className="space-y-2 text-gray-800 text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="bg-gradient-to-r from-green-600 to-blue-600 text-white w-8 h-8 flex items-center justify-center rounded-full text-sm font-bold">
+                    1
+                  </span>
+                  <span>Railway Station Hammalwadi MIDC</span>
+                </li>
+
+                <li className="flex items-start gap-2">
+                  <span className="bg-gradient-to-r from-green-600 to-blue-600 text-white w-8 h-8 flex items-center justify-center rounded-full text-sm font-bold">
+                    2
+                  </span>
+                  <span>Stock home, Shendra MIDC</span>
+                </li>
+
+                <li className="flex items-start gap-2">
+                  <span className="bg-gradient-to-r from-green-600 to-blue-600 text-white w-8 h-8 flex items-center justify-center rounded-full text-sm font-bold">
+                    3
+                  </span>
+                  <span>
+                    Office: The Royal Group of Industries, P. No. 01 Hammallwadi MIDC,<br />
+                    Behind Railway Station,Aurangabad (M.S) 431 005
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Contact Box */}
+            <div className="bg-white/60 rounded-xl border border-white/50">
+              <h4 className="text-2xl font-bold text-gray-900 mb-3 ">
+                Reservations & Enquiry
+              </h4>
+             <div className="w-16 h-1 bg-gradient-to-r from-green-600 to-blue-600 mx-0 mt-3 mb-4 rounded-full"></div>
+
+
+              <div className="space-y-3 text-sm px-2">
+                <div>
+                  <p className="text-gray-600">Email:</p>
+                  <p className="font-semibold text-gray-900">
+                    service@thelinenhouse.in
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-gray-600">Call:</p>
+                  <p className="font-semibold text-gray-900">
+                    96 89 953 959 | 98 23 927 972 | 92 20 974 779
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-gray-600">Website:</p>
+                  <p className="font-semibold text-gray-900">
+                    www.thelinenhouse.in
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  );
+}
