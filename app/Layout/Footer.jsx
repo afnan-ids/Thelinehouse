@@ -162,7 +162,7 @@ export default function Footer() {
                   </div>
                   <div>
                     <p className="text-gray-800 text-sm">Call us at</p>
-                    <p className="text-black font-semibold">96 89 953 959</p>
+                    <p className="text-black font-semibold">+91 96899 53959</p>
                   </div>
                 </div>
 

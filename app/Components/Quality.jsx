@@ -1,4 +1,12 @@
-import { FaTint, FaFire, FaWeightHanging, FaSyringe, FaThumbsUp } from "react-icons/fa";
+import {
+  FaTint,
+  FaFire,
+  FaWeightHanging,
+  FaSyringe,
+  FaThumbsUp,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
+import { HiBuildingOffice2 } from "react-icons/hi2";
 
 export default function Quality() {
   const qualityItems = [
@@ -32,7 +40,6 @@ export default function Quality() {
   return (
     <section className="py-15 bg-gradient-to-br from-green-100 to-blue-100">
       <div className="container mx-auto px-4 max-w-7xl">
-        
         {/* Heading */}
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-4xl font-bold text-gray-900">
@@ -40,7 +47,8 @@ export default function Quality() {
           </h2>
           <div className="w-16 h-1 theameGradient mx-auto mt-3 mb-4 rounded-full"></div>
           <p className="text-gray-800 max-w-2xl mx-auto text-sm md:text-base">
-            We follow strict quality checks to ensure our fabrics meet international standards.
+            We follow strict quality checks to ensure our fabrics meet
+            international standards.
           </p>
         </div>
 
@@ -67,7 +75,6 @@ export default function Quality() {
         {/* Bottom Info Box */}
         <div className="bg-white/70 backdrop-blur-md border border-white/60 rounded-2xl p-10 shadow-sm">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start ">
-            
             {/* Locations */}
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">
@@ -75,28 +82,29 @@ export default function Quality() {
               </h3>
               <div className="w-16 h-1 theameGradient mx-0 mt-3 mb-4 rounded-full"></div>
 
-
               <ul className="space-y-2 text-gray-800 text-sm">
                 <li className="flex items-start gap-2">
-                  <span className="theameGradient text-white w-8 h-8 flex items-center justify-center rounded-full text-sm font-bold">
-                    1
+                  <span className="theameGradient text-white w-6 h-6 flex items-center justify-center rounded-full text-sm font-bold">
+                    <FaMapMarkerAlt className="text-white"  style={{fontSize : "12px"}} />
                   </span>
                   <span>Railway Station Hammalwadi MIDC</span>
                 </li>
 
                 <li className="flex items-start gap-2">
-                  <span className="theameGradient text-white w-8 h-8 flex items-center justify-center rounded-full text-sm font-bold">
-                    2
+                  <span className="theameGradient text-white w-6 h-6 flex items-center justify-center rounded-full text-sm font-bold">
+                      <FaMapMarkerAlt className="text-white"  style={{fontSize : "12px"}} />
                   </span>
                   <span>Stock home, Shendra MIDC</span>
                 </li>
 
                 <li className="flex items-start gap-2">
-                  <span className="theameGradient text-white w-8 h-8 flex items-center justify-center rounded-full text-sm font-bold">
-                    3
+                  <span className="theameGradient text-white w-6 h-6 flex items-center justify-center rounded-full text-sm font-bold">
+                      <HiBuildingOffice2  style={{fontSize : "12px"}}/>
                   </span>
                   <span>
-                    Office: The Royal Group of Industries, P. No. 01 Hammallwadi MIDC,<br />
+                    Office: The Royal Group of Industries, P. No. 01 Hammallwadi
+                    MIDC,
+                    <br />
                     Behind Railway Station,Aurangabad (M.S) 431 005
                   </span>
                 </li>
@@ -104,12 +112,11 @@ export default function Quality() {
             </div>
 
             {/* Contact Box */}
-            <div className="bg-white/60 rounded-xl border border-white/50">
+            <div className="bg-white/60 rounded-xl border border-white/50 p-2">
               <h4 className="text-2xl font-bold text-gray-900 mb-3 ">
                 Reservations & Enquiry
               </h4>
-             <div className="w-16 h-1 theameGradient mx-0 mt-3 mb-4 rounded-full"></div>
-
+              <div className="w-16 h-1 theameGradient mx-0 mt-3 mb-4 rounded-full"></div>
 
               <div className="space-y-3 text-sm px-2">
                 <div>
@@ -122,7 +129,7 @@ export default function Quality() {
                 <div>
                   <p className="text-gray-600">Call:</p>
                   <p className="font-semibold text-gray-900">
-                    96 89 953 959 | 98 23 927 972 | 92 20 974 779
+                    +91 96899 53953 | +91 98239 27972 | +91 92209 74779
                   </p>
                 </div>
 
@@ -134,10 +141,8 @@ export default function Quality() {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
-
       </div>
     </section>
   );

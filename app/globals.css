@@ -44,8 +44,8 @@ body {
 }
 
 .theameGradient {
-background: #0a4016;
-background: linear-gradient(90deg, rgba(10, 64, 22, 1) 0%, rgba(10, 166, 20, 1) 35%, rgba(60, 203, 192, 1) 72%, rgba(75, 214, 242, 1) 100%) !important;
+background: #4BD6F2;
+background: linear-gradient(90deg, rgba(75, 214, 242, 1) 0%, rgba(49, 204, 191, 1) 35%, rgba(10, 166, 20, 1) 72%, rgba(2, 122, 28, 1) 100%) !important;
 }
 
 .theametext {

@@ -1,15 +1,10 @@
-'use client'
+"use client";
 
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import {
-  FaBars,
-  FaChevronDown,
-  FaPhoneAlt,
-  FaEnvelope,
-} from "react-icons/fa";
+import { FaBars, FaChevronDown, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 import {
   FaFacebookF,
@@ -23,9 +18,9 @@ export default function Header() {
 
   const navLinks = [
     { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
     { name: "Products", href: "#", hasDropdown: true },
     { name: "Services", href: "/services" },
-    { name: "About", href: "/about" },
     { name: "Contact", href: "/Pages/ContactUs" },
   ];
 
@@ -34,7 +29,6 @@ export default function Header() {
       {/* Top Info Bar */}
       <div className="w-full bg-gray-950 text-gray-200 text-sm">
         <div className="max-w-7xl mx-auto px-4 lg:px-8 py-2 flex flex-col lg:flex-row items-center justify-between gap-2">
-
           {/* Left */}
           <div className="hidden lg:flex items-center gap-6">
             <a
@@ -42,7 +36,7 @@ export default function Header() {
               className="flex items-center gap-2 hover:text-green-400 transition"
             >
               <FaEnvelope className="text-green-400" />
-              contact@linehouse.com
+              service@thelinenhouse.in
             </a>
 
             <span className="text-gray-600">|</span>
@@ -52,7 +46,9 @@ export default function Header() {
               className="flex items-center gap-2 hover:text-red-400 transition"
             >
               <FaPhoneAlt className="text-red-400" />
-              +91 0000 0000
+              +91 96899 53953 |
+              +91 98239 27972 |
+              +91 92209 74779 
             </a>
           </div>
 
@@ -99,7 +95,6 @@ export default function Header() {
       <header className="sticky top-0 z-50 theameGradient border-b border-gray-400">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between py-2">
-
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3">
               <Image
@@ -117,7 +112,7 @@ export default function Header() {
                 <div key={item.name} className="relative group">
                   <Link
                     href={item.href}
-                    className="flex items-center gap-2 text-black font-medium tracking-wide hover:text-green-700  transition relative"
+                    className="flex items-center gap-2 text-black font-medium tracking-wide hover:text-white  transition relative"
                   >
                     {item.name}
                     {item.hasDropdown && (
@@ -131,33 +126,35 @@ export default function Header() {
 
                   {/* Dropdown */}
                   {/* Dropdown */}
-{item.hasDropdown && (
-  <div className="absolute top-full left-0 mt-4 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
-    <div className="bg-white rounded-lg py-2 shadow-xl border border-gray-100 overflow-hidden">
-      {["Hospital Wears", "Industrial Wears", "Hotel Wears", "Corporate Wears"].map(
-        (subItem) => (
-          <Link
-            key={subItem}
-            href={item.href}
-            className="relative block px-5 py-3 pl-8 text-gray-600 font-medium transition-all duration-300
+                  {item.hasDropdown && (
+                    <div className="absolute top-full left-0 mt-4 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+                      <div className="bg-white rounded-lg py-2 shadow-xl border border-gray-100 overflow-hidden">
+                        {[
+                          "Hospital Wears",
+                          "Industrial Wears",
+                          "Hotel Wears",
+                          "Corporate Wears",
+                        ].map((subItem) => (
+                          <Link
+                            key={subItem}
+                            href={item.href}
+                            className="relative block px-5 py-3 pl-8 text-gray-600 font-medium transition-all duration-300
             hover:bg-gray-100 hover:text-gray-900 hover:translate-x-1
             before:absolute before:left-0 before:top-0 before:h-full before:w-1
             before:bg-gradient-to-b before:from-green-600 before:to-red-500
             before:opacity-0 before:transition-opacity before:duration-300
             hover:before:opacity-100"
-          >
-            {subItem}
-          </Link>
-        )
-      )}
-    </div>
-  </div>
-)}
+                          >
+                            {subItem}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               ))}
             </nav>
 
-           
             {/* <div className="hidden lg:flex items-center gap-4">
               <Link
                 href="/Pages/ContactUs"

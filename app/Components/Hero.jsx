@@ -125,7 +125,7 @@ export default function Slider() {
   ];
 
   return (
-    <div className="relative w-full py-1 overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white">
+    <div className="relative w-full overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white">
       <div className="relative max-w-8xl mx-auto">
         <div className="relative overflow-hidden shadow-2xl border border-gray-200 bg-white">
           <Swiper
