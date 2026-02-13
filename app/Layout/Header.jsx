@@ -96,7 +96,7 @@ export default function Header() {
       </div>
 
       {/* Main Navbar */}
-      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-gray-400">
+      <header className="sticky top-0 z-50 theameGradient border-b border-gray-400">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between py-2">
 
@@ -117,7 +117,7 @@ export default function Header() {
                 <div key={item.name} className="relative group">
                   <Link
                     href={item.href}
-                    className="flex items-center gap-2 text-gray-700 font-medium tracking-wide hover:text-green-700  transition relative"
+                    className="flex items-center gap-2 text-black font-medium tracking-wide hover:text-green-700  transition relative"
                   >
                     {item.name}
                     {item.hasDropdown && (
@@ -186,7 +186,7 @@ export default function Header() {
                   key={item.name}
                   href={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="block px-4 py-3 rounded-xl text-gray-700 font-medium hover:bg-gray-50 hover:text-green-700 transition"
+                  className="block px-4 py-3 rounded-xl text-white font-medium hover:bg-gray-50 hover:text-green-700 transition"
                 >
                   {item.name}
                 </Link>

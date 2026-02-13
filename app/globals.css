@@ -11,8 +11,14 @@ body {
 
 /* Custom animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fade-in {
@@ -34,5 +40,23 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #1e3a8a;
+  /* background: #1e3a8a; */
+}
+
+.theameGradient {
+background: #0a4016;
+background: linear-gradient(90deg, rgba(10, 64, 22, 1) 0%, rgba(10, 166, 20, 1) 35%, rgba(60, 203, 192, 1) 72%, rgba(75, 214, 242, 1) 100%) !important;
+}
+
+.theametext {
+  background-color: linear-gradient(
+    135deg,
+    rgba(46, 162, 38, 0.931) 20%,
+    rgba(245, 52, 52, 0.927) 44%,
+    rgba(245, 52, 52, 0.927) 40%,
+    rgba(148, 243, 255, 0.99) 86%
+  ) !important;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

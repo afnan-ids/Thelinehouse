@@ -126,8 +126,8 @@ export default function Slider() {
 
   return (
     <div className="relative w-full py-1 overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white">
-      <div className="relative max-w-8xl mx-auto px-4 lg:px-8">
-        <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-200 bg-white">
+      <div className="relative max-w-8xl mx-auto">
+        <div className="relative overflow-hidden shadow-2xl border border-gray-200 bg-white">
           <Swiper
             modules={[Autoplay, Pagination, Navigation, EffectFade]}
             autoplay={{ delay: 5000, disableOnInteraction: false }}

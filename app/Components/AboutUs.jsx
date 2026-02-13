@@ -30,7 +30,7 @@ export default function About() {
             and custom apparel solutions with 15+ years of expertise.
           </p>
 
-          <div className="w-16 h-1 bg-gradient-to-r from-green-600 to-blue-600 mx-auto mt-4 rounded-full"></div>
+          <div className="w-16 h-1 theameGradient mx-auto mt-4 rounded-full"></div>
         </div>
 
         <div className=" gap-8 items-start">
@@ -52,7 +52,7 @@ export default function About() {
               {/* Features */}
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="p-2 bg-gradient-to-br from-green-500 to-blue-500 rounded-xl shadow-sm">
+                  <div className="p-2 theameGradient rounded-xl shadow-sm">
                     <FaUsers className="text-white text-sm" />
                   </div>
                   <div>
@@ -66,7 +66,7 @@ export default function About() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="p-2 bg-gradient-to-br from-green-500 to-blue-500 rounded-xl shadow-sm">
+                  <div className="p-2 theameGradient rounded-xl shadow-sm">
                     <FaShieldAlt className="text-white text-sm" />
                   </div>
                   <div>
@@ -107,7 +107,7 @@ export default function About() {
             {/* Mission Card */}
             <div className="bg-white/70 backdrop-blur-xl border border-white/50 rounded-2xl p-5 shadow-sm hover:shadow-md transition">
               <div className="flex items-center mb-3">
-                <div className="p-2.5 bg-gradient-to-br from-green-500 to-blue-500 rounded-xl mr-3 shadow-sm">
+                <div className="p-2.5 theameGradient rounded-xl mr-3 shadow-sm">
                   <FaAward className="text-white text-lg" />
                 </div>
                 <div>
@@ -129,7 +129,7 @@ export default function About() {
             {/* Vision Card */}
             <div className="bg-white/70 backdrop-blur-xl border border-white/50 rounded-2xl p-5 shadow-sm hover:shadow-md transition">
               <div className="flex items-center mb-3">
-                <div className="p-2.5 bg-gradient-to-br from-green-500 to-blue-500 rounded-xl mr-3 shadow-sm">
+                <div className="p-2.5 theameGradient rounded-xl mr-3 shadow-sm">
                   <FaGlobe className="text-white text-lg" />
                 </div>
                 <div>
@@ -148,7 +148,7 @@ export default function About() {
             </div>
 
             {/* CTA */}
-            <button className="w-full py-3 bg-gradient-to-r from-green-600 to-blue-600 text-white font-semibold rounded-xl shadow-sm hover:shadow-md hover:scale-[1.01] hover:cursor-pointer transition">
+            <button className="w-full py-3 theameGradient text-white font-semibold rounded-xl shadow-sm hover:shadow-md hover:scale-[1.01] hover:cursor-pointer transition">
               Learn More About Us
             </button>
 

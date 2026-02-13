@@ -51,7 +51,7 @@ export default function Features() {
             Our Features
           </h2>
 
-          <div className="w-16 h-1 bg-gradient-to-r from-green-600 to-blue-600 mx-auto mb-4 rounded-full"></div>
+          <div className="w-16 h-1 theameGradient mx-auto mb-4 rounded-full"></div>
 
           <p className="text-gray-800 text-sm md:text-base max-w-2xl mx-auto">
             We combine premium fabrics with expert craftsmanship to deliver uniforms
@@ -69,7 +69,7 @@ export default function Features() {
               <div className="flex items-start gap-3">
                 
                 {/* Icon */}
-                <div className="p-2 bg-gradient-to-br from-green-500 to-blue-500 rounded-lg shadow-sm">
+                <div className="p-2 theameGradient rounded-lg shadow-sm">
                   <div className="text-white text-2xl">{feature.icon}</div>
                 </div>
 
